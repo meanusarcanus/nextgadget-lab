@@ -1,0 +1,345 @@
+/* Modern Glassmorphism & High-Tech Design System */
+:root {
+    --bg-color: #0a0a0d;
+    --card-bg: rgba(20, 20, 26, 0.7);
+    --card-border: rgba(42, 45, 60, 0.6);
+    --text-primary: #ffffff;
+    --text-muted: #a0a5b5;
+    --cyan: #00f0ff;
+    --emerald: #00ff9d;
+    --gold: #ffc832;
+    --font-main: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: var(--font-main);
+    min-height: 100vh;
+    padding: 24px 16px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.background-grid {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+    z-index: -2;
+}
+
+.radial-glow {
+    position: fixed;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(0, 240, 255, 0.12) 0%, rgba(0,0,0,0) 70%);
+    z-index: -1;
+    pointer-events: none;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.avatar-ring {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 16px;
+    border-radius: 50%;
+    padding: 3px;
+    background: linear-gradient(135deg, var(--cyan), var(--emerald));
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.4);
+}
+
+.avatar-inner {
+    width: 100%;
+    height: 100%;
+    background: #0a0a0d;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+}
+
+.brand-title {
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    background: linear-gradient(to right, #ffffff, var(--cyan));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 6px;
+}
+
+.brand-subtitle {
+    color: var(--text-muted);
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.tag-badge {
+    display: inline-block;
+    background: rgba(0, 240, 255, 0.1);
+    border: 1px solid var(--cyan);
+    color: var(--text-muted);
+    font-size: 11px;
+    font-family: var(--font-mono);
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+
+.accent-tag {
+    color: var(--emerald);
+    font-weight: 700;
+}
+
+.stats-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    backdrop-filter: blur(12px);
+    border-radius: 16px;
+    padding: 16px;
+    margin-bottom: 32px;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-value {
+    display: block;
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--cyan);
+    font-family: var(--font-mono);
+}
+
+.stat-label {
+    font-size: 11px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+}
+
+.stat-divider {
+    width: 1px;
+    height: 28px;
+    background: var(--card-border);
+}
+
+.filter-controls {
+    margin-bottom: 32px;
+}
+
+#search-input {
+    width: 100%;
+    padding: 14px 18px;
+    background: rgba(20, 20, 26, 0.9);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 16px;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+#search-input:focus {
+    border-color: var(--cyan);
+    box-shadow: 0 0 12px rgba(0, 240, 255, 0.3);
+}
+
+.category-pills {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding-bottom: 8px;
+}
+
+.pill {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--card-border);
+    color: var(--text-muted);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.2s ease;
+}
+
+.pill.active, .pill:hover {
+    background: var(--cyan);
+    color: #000;
+    border-color: var(--cyan);
+    font-weight: 600;
+}
+
+.gadget-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+    margin-bottom: 48px;
+}
+
+.gadget-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 16px;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.gadget-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 240, 255, 0.15);
+    border-color: var(--cyan);
+}
+
+.card-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    background: #14141a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.card-image-wrapper img {
+    max-width: 85%;
+    max-height: 85%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.gadget-card:hover .card-image-wrapper img {
+    transform: scale(1.05);
+}
+
+.category-badge {
+    position: absolute;
+    top: 12px; left: 12px;
+    background: rgba(0, 0, 0, 0.75);
+    border: 1px solid var(--cyan);
+    color: var(--cyan);
+    font-size: 10px;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 6px;
+    text-transform: uppercase;
+}
+
+.price-tag {
+    position: absolute;
+    bottom: 12px; right: 12px;
+    background: var(--emerald);
+    color: #000;
+    font-weight: 800;
+    font-size: 13px;
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-family: var(--font-mono);
+}
+
+.card-content {
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-rating {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 8px;
+}
+
+.stars {
+    color: var(--gold);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.reviews {
+    color: var(--text-muted);
+    font-size: 12px;
+}
+
+.card-title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 12px;
+    color: #fff;
+}
+
+.specs-preview {
+    margin-bottom: 18px;
+    flex-grow: 1;
+}
+
+.spec-chip {
+    font-size: 12px;
+    color: var(--text-muted);
+    background: rgba(255, 255, 255, 0.03);
+    padding: 4px 8px;
+    border-radius: 6px;
+    margin-bottom: 4px;
+    border-left: 2px solid var(--cyan);
+}
+
+.buy-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: linear-gradient(135deg, var(--cyan), #00b8ff);
+    color: #000;
+    font-weight: 800;
+    font-size: 14px;
+    padding: 12px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.buy-button:hover {
+    background: linear-gradient(135deg, var(--emerald), var(--cyan));
+    box-shadow: 0 0 16px rgba(0, 255, 157, 0.4);
+}
+
+.footer {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 12px;
+    padding: 24px 0;
+    border-top: 1px solid var(--card-border);
+}

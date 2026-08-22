@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@nextgadget.lab — Tech Gadget Intelligence & Bio Hub</title>
+    <meta name="description" content="Curated high-performance tech gadgets, EDC gear, desk setup upgrades, and smart home hardware reviewed by @nextgadget.lab.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-grid"></div>
+    <div class="radial-glow"></div>
+
+    <main class="container">
+        <!-- Header & Profile -->
+        <header class="profile-header">
+            <div class="avatar-ring">
+                <div class="avatar-inner">⚡</div>
+            </div>
+            <h1 class="brand-title">@nextgadget.lab</h1>
+            <p class="brand-subtitle">Curated High-Performance Tech & Desk Setup Benchmarks</p>
+            <div class="tag-badge">AFFILIATE TAG ACTIVE: <span class="accent-tag">techspecdiges-20</span></div>
+        </header>
+
+        <!-- Stats Bar -->
+        <section class="stats-bar">
+            <div class="stat-item">
+                <span class="stat-value" id="stat-count">0</span>
+                <span class="stat-label">Reviewed Gadgets</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-value">4.6★+</span>
+                <span class="stat-label">Min Rating Threshold</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-value">100%</span>
+                <span class="stat-label">Verified Buyers</span>
+            </div>
+        </section>
+
+        <!-- Search & Filter Controls -->
+        <section class="filter-controls">
+            <input type="text" id="search-input" placeholder="Search gadgets, specs, or models..." onkeyup="filterGadgets()">
+            <div class="category-pills">
+                <button class="pill active" onclick="setCategory('all', this)">All Hardware</button>
+                <button class="pill" onclick="setCategory('Audio & Desk Setups', this)">Audio & Desk</button>
+                <button class="pill" onclick="setCategory('Productivity Hardware', this)">Productivity</button>
+                <button class="pill" onclick="setCategory('Smart Home', this)">Smart Home</button>
+                <button class="pill" onclick="setCategory('EDC Tech', this)">EDC Tech</button>
+            </div>
+        </section>
+
+        <!-- Gadgets Grid -->
+        <section class="gadget-grid" id="gadget-grid">
+            <!-- Rendered dynamically by JS -->
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2026 @nextgadget.lab • As an Amazon Associate, we earn from qualifying purchases.</p>
+        </footer>
+    </main>
+
+    <script>
+        let allGadgets = [{"asin": "B09W2K7F77", "title": "Anker 737 Power Bank (PowerCore 24K 140W)", "category": "EDC Tech", "rating": 4.7, "review_count": 9840, "price": "$129.99", "image_url": "https://m.media-amazon.com/images/I/61k3p+M6Y8L._AC_SL1500_.jpg", "affiliate_url": "https://www.amazon.com/dp/B09W2K7F77?tag=techspecdiges-20", "pros": ["Charges a MacBook Pro 16\" to 50% in just 28 minutes", "Real-time OLED telemetry shows power draw, health, and recharge time", "GaNPrime efficiency prevents heat throttling under max load"], "cons": "Substantial weight (1.4 lbs / 630g) for lightweight EDC bags.", "specs": {"Capacity": "24,000mAh 86.4Wh (Flight Approved)", "Max Output": "140W Power Delivery 3.1 Bi-Directional", "Display": "Smart Digital Color Display (Real-Time Watts & Temp)", "Ports": "2x USB-C + 1x USB-A"}, "processed_at": "2026-08-22T12:57:17.874181", "published_to_instagram": 0, "instagram_container_id": null, "published_at": null}, {"asin": "B09H5W3G9T", "title": "Govee RGBIC LED Strip Light M1 with Matter Support", "category": "Smart Home", "rating": 4.5, "review_count": 1250, "price": "$99.99", "image_url": "https://m.media-amazon.com/images/I/71C7kC4+y5L._AC_SL1500_.jpg", "affiliate_url": "https://www.amazon.com/dp/B09H5W3G9T?tag=techspecdiges-20", "pros": ["Ultra-dense LED configuration eliminates spotty light gaps", "Native Matter protocol ensures local ultra-fast automation response", "Music sync with built-in acoustic sensor"], "cons": "Thicker silicone coating requires careful bending around tight corners.", "specs": {"Density": "60 LEDs per Meter (Ultra-Bright Uniform Glow)", "Protocol": "Matter over Wi-Fi & Bluetooth", "Length": "6.56 ft / 2 Meters (Cuttable & Extendable)", "Chipset": "4-in-1 RGBIC Chip with Independent Segment Control"}, "processed_at": "2026-08-22T12:57:14.717757", "published_to_instagram": 0, "instagram_container_id": null, "published_at": null}];
+
+        document.getElementById('stat-count').innerText = allGadgets.length;
+
+        let currentCategory = 'all';
+
+        function renderGrid(items) {
+            const grid = document.getElementById('gadget-grid');
+            if (items.length === 0) {
+                grid.innerHTML = `<div class="empty-state">No matching tech gadgets found.</div>`;
+                return;
+            }
+
+            grid.innerHTML = items.map(item => `
+                <div class="gadget-card" data-category="${item.category}">
+                    <div class="card-image-wrapper">
+                        <span class="category-badge">${item.category}</span>
+                        <img src="${item.image_url || 'https://via.placeholder.com/400x300/14141a/00f0ff?text=NextGadget.Lab'}" alt="${item.title}" loading="lazy">
+                        <span class="price-tag">${item.price || '$99.99'}</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-rating">
+                            <span class="stars">★ ${item.rating}</span>
+                            <span class="reviews">(${item.review_count ? item.review_count.toLocaleString() : 250}+ reviews)</span>
+                        </div>
+                        <h2 class="card-title">${item.title}</h2>
+                        
+                        <div class="specs-preview">
+                            ${Object.entries(item.specs || {}).slice(0, 2).map(([k, v]) => `
+                                <div class="spec-chip"><strong>${k}:</strong> ${v}</div>
+                            `).join('')}
+                        </div>
+
+                        <a href="${item.affiliate_url}" target="_blank" rel="noopener sponsored" class="buy-button">
+                            <span>GET ON AMAZON</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function filterGadgets() {
+            const query = document.getElementById('search-input').value.toLowerCase();
+            const filtered = allGadgets.filter(g => {
+                const matchesCat = currentCategory === 'all' || g.category.toLowerCase() === currentCategory.toLowerCase();
+                const matchesSearch = g.title.toLowerCase().includes(query) || JSON.stringify(g.specs || {}).toLowerCase().includes(query);
+                return matchesCat && matchesSearch;
+            });
+            renderGrid(filtered);
+        }
+
+        function setCategory(cat, el) {
+            currentCategory = cat;
+            document.querySelectorAll('.pill').forEach(b => b.classList.remove('active'));
+            el.classList.add('active');
+            filterGadgets();
+        }
+
+        // Initial render
+        renderGrid(allGadgets);
+    </script>
+</body>
+</html>
