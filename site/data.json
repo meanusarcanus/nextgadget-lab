@@ -1,5 +1,31 @@
 [
   {
+    "asin": "B07S7X4FGL",
+    "title": "BenQ WiT e-Reading LED Desk Lamp with Auto-Dimming",
+    "category": "Audio & Desk Setups",
+    "rating": 4.7,
+    "review_count": 2150,
+    "price": "$229.00",
+    "image_url": "https://m.media-amazon.com/images/I/61k2Kk8YxNL._AC_SL1500_.jpg",
+    "affiliate_url": "https://www.amazon.com/dp/B07S7X4FGL?tag=techspecdiges-20",
+    "pros": [
+      "Wide curved illumination eliminates screen glare completely",
+      "Zero flicker driver reduces long coding session eyestrain",
+      "Tactile touch ring interface for intuitive dimming"
+    ],
+    "cons": "Higher price point compared to basic desk lamps.",
+    "specs": {
+      "Illumination": "1800 Lux Ultra-Wide Curved Light Field",
+      "Color Temp": "2700K - 5700K Adjustable",
+      "Sensor": "Built-in Ambient Light Auto-Dimmer",
+      "Ergonomics": "Ball-joint Zinc Alloy Counter-Balance Arm"
+    },
+    "processed_at": "2026-08-24T15:38:46.719460",
+    "published_to_instagram": 0,
+    "instagram_container_id": null,
+    "published_at": null
+  },
+  {
     "asin": "B09W2K7F77",
     "title": "Anker 737 Power Bank (PowerCore 24K 140W)",
     "category": "EDC Tech",
