@@ -1,0 +1,23 @@
+{
+  "212": {"state": "NY", "city": "New York", "country": "US", "timezone": "America/New_York"},
+  "315": {"state": "NY", "city": "Syracuse", "country": "US", "timezone": "America/New_York"},
+  "415": {"state": "CA", "city": "San Francisco", "country": "US", "timezone": "America/Los_Angeles"},
+  "510": {"state": "CA", "city": "Oakland", "country": "US", "timezone": "America/Los_Angeles"},
+  "515": {"state": "IA", "city": "Des Moines", "country": "US", "timezone": "America/Chicago"},
+  "610": {"state": "PA", "city": "Allentown", "country": "US", "timezone": "America/New_York"},
+  "647": {"state": "ON", "city": "Toronto", "country": "CA", "timezone": "America/Toronto"},
+  "704": {"state": "NC", "city": "Charlotte", "country": "US", "timezone": "America/New_York"},
+  "800": {"state": "Toll-Free", "city": "North America", "country": "US/CA", "timezone": "UTC"},
+  "888": {"state": "Toll-Free", "city": "North America", "country": "US/CA", "timezone": "UTC"},
+  "877": {"state": "Toll-Free", "city": "North America", "country": "US/CA", "timezone": "UTC"},
+  "866": {"state": "Toll-Free", "city": "North America", "country": "US/CA", "timezone": "UTC"},
+  "855": {"state": "Toll-Free", "city": "North America", "country": "US/CA", "timezone": "UTC"},
+  "844": {"state": "Toll-Free", "city": "North America", "country": "US/CA", "timezone": "UTC"},
+  "833": {"state": "Toll-Free", "city": "North America", "country": "US/CA", "timezone": "UTC"},
+  "917": {"state": "NY", "city": "New York", "country": "US", "timezone": "America/New_York"},
+  "310": {"state": "CA", "city": "Los Angeles", "country": "US", "timezone": "America/Los_Angeles"},
+  "416": {"state": "ON", "city": "Toronto", "country": "CA", "timezone": "America/Toronto"},
+  "604": {"state": "BC", "city": "Vancouver", "country": "CA", "timezone": "America/Vancouver"},
+  "305": {"state": "FL", "city": "Miami", "country": "US", "timezone": "America/New_York"},
+  "718": {"state": "NY", "city": "Brooklyn", "country": "US", "timezone": "America/New_York"}
+}

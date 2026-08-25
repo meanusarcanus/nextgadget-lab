@@ -1,0 +1,33 @@
+{
+  "litigator_phone_numbers": [
+    "+14157012311",
+    "+12128647665",
+    "4157012311",
+    "2128647665",
+    "+18005550199"
+  ],
+  "high_risk_area_codes": ["415", "212", "310"],
+  "known_serial_plaintiffs": {
+    "+14157012311": {
+      "name": "John Doe (Serial TCPA Plaintiff)",
+      "filings_count": 14,
+      "last_filing": "2024-11-10",
+      "jurisdiction": "NDCA",
+      "risk_level": "HIGH_LITIGATOR_ALERT"
+    },
+    "+12128647665": {
+      "name": "Consumer Class Action Firm Line",
+      "filings_count": 28,
+      "last_filing": "2025-02-01",
+      "jurisdiction": "SDNY",
+      "risk_level": "HIGH_LITIGATOR_ALERT"
+    },
+    "+18005550199": {
+      "name": "TCPA Audit Honey Pot Trap",
+      "filings_count": 9,
+      "last_filing": "2025-05-18",
+      "jurisdiction": "Federal",
+      "risk_level": "HIGH_LITIGATOR_ALERT"
+    }
+  }
+}

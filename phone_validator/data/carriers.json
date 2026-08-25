@@ -1,0 +1,15 @@
+{
+  "mobile_prefixes": ["610809", "704712", "515494", "917555", "310999"],
+  "landline_prefixes": ["212987", "416555", "305222"],
+  "voip_prefixes": ["647335", "415701", "212864", "510444"],
+  "carriers": {
+    "610809": {"name": "Verizon Wireless", "ocn": "6206", "line_type": "mobile", "network": "Verizon"},
+    "704712": {"name": "AT&T Mobility", "ocn": "6010", "line_type": "mobile", "network": "AT&T"},
+    "515494": {"name": "T-Mobile USA", "ocn": "6530", "line_type": "mobile", "network": "T-Mobile"},
+    "212987": {"name": "Verizon New York Landline", "ocn": "9132", "line_type": "landline", "network": "Verizon Wireline"},
+    "647335": {"name": "Bandwidth.com CLEC / Rogers VoIP", "ocn": "9940", "line_type": "voip", "network": "Bandwidth / VoIP"},
+    "415701": {"name": "Twilio / Google Voice VoIP", "ocn": "8812", "line_type": "voip", "network": "Twilio"},
+    "212864": {"name": "VoIP.ms / SIP Trunking", "ocn": "7711", "line_type": "voip", "network": "VoIP.ms"},
+    "800555": {"name": "AT&T Toll-Free Services", "ocn": "8000", "line_type": "toll_free", "network": "Toll-Free"}
+  }
+}
