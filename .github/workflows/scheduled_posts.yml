@@ -52,7 +52,9 @@ jobs:
           git push
 
       - name: Setup GitHub Pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
 
       - name: Upload Bio Hub Artifact
         uses: actions/upload-pages-artifact@v3
@@ -61,3 +63,4 @@ jobs:
 
       - name: Deploy Link-in-Bio to GitHub Pages
         uses: actions/deploy-pages@v4
+
