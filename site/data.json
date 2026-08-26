@@ -1,5 +1,31 @@
 [
   {
+    "asin": "B0B7CMVHBD",
+    "title": "SwitchBot Smart Curtain Rod 3 Motorized Opener",
+    "category": "Smart Home",
+    "rating": 4.4,
+    "review_count": 3410,
+    "price": "$89.99",
+    "image_url": "https://m.media-amazon.com/images/I/61+aW+pZ7VL._AC_SL1500_.jpg",
+    "affiliate_url": "https://www.amazon.com/dp/B0B7CMVHBD?tag=techspecdiges-20",
+    "pros": [
+      "Retrofits onto existing curtain rods without tools in 30 seconds",
+      "Matter-ready for seamless Apple Home, Alexa & Google integration",
+      "Automates natural circadian lighting schedule"
+    ],
+    "cons": "Solar panel attachment sold separately for infinite battery.",
+    "specs": {
+      "Push Power": "16 lbs (7.2 kg) Heavy Duty Motor",
+      "Connectivity": "Bluetooth 5.0 & Matter Hub Compatible",
+      "Battery": "Up to 8 Months per Charge (Solar Panel Ready)",
+      "Noise Level": "QuietDrift Mode < 25dB Silent Motion"
+    },
+    "processed_at": "2026-08-26T16:17:28.297656",
+    "published_to_instagram": 0,
+    "instagram_container_id": null,
+    "published_at": null
+  },
+  {
     "asin": "B07S7X4FGL",
     "title": "BenQ WiT e-Reading LED Desk Lamp with Auto-Dimming",
     "category": "Audio & Desk Setups",
