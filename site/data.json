@@ -1,5 +1,31 @@
 [
   {
+    "asin": "B0BTMSF6T6",
+    "title": "Keychron Q1 Pro Wireless Custom Mechanical Keyboard",
+    "category": "Productivity Hardware",
+    "rating": 4.6,
+    "review_count": 840,
+    "price": "$199.99",
+    "image_url": "https://m.media-amazon.com/images/I/71Y+z4q4RDL._AC_SL1500_.jpg",
+    "affiliate_url": "https://www.amazon.com/dp/B0BTMSF6T6?tag=techspecdiges-20",
+    "pros": [
+      "Double-gasket mount structure provides deep, satisfying acoustic thock",
+      "QMK/VIA reprogrammable keys for custom workflow bindings",
+      "Heavyweight aluminum chassis remains rock solid on any desk"
+    ],
+    "cons": "Heavy chassis is designed for desk setups rather than portable travel.",
+    "specs": {
+      "Body": "6063 CNC Machined Full Aluminum Frame",
+      "Layout": "75% Compact Gasket Mount",
+      "Connectivity": "Bluetooth 5.1 + Type-C Wired (1000Hz)",
+      "Keycaps": "KSA Profile Double-Shot PBT"
+    },
+    "processed_at": "2026-08-28T23:52:35.546970",
+    "published_to_instagram": 0,
+    "instagram_container_id": null,
+    "published_at": null
+  },
+  {
     "asin": "B0B7CMVHBD",
     "title": "SwitchBot Smart Curtain Rod 3 Motorized Opener",
     "category": "Smart Home",
