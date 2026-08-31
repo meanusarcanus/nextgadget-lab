@@ -1,5 +1,31 @@
 [
   {
+    "asin": "B09B8W56SS",
+    "title": "Anker Soundcore Motion X600 Spatial Audio Speaker",
+    "category": "Audio & Desk Setups",
+    "rating": 4.6,
+    "review_count": 1840,
+    "price": "$199.99",
+    "image_url": "https://m.media-amazon.com/images/I/71R2Hw+B92L._AC_SL1500_.jpg",
+    "affiliate_url": "https://www.amazon.com/dp/B09B8W56SS?tag=techspecdiges-20",
+    "pros": [
+      "Immersive spatial audio algorithm with 3D soundstage",
+      "Premium metallic design elevates any minimalist desk setup",
+      "LDAC codec support for lossless wireless streaming"
+    ],
+    "cons": "Slightly heavier than standard portable Bluetooth speakers.",
+    "specs": {
+      "Audio Driver": "5 Drivers (50W Total Output)",
+      "Frequency Response": "40Hz - 40kHz High-Res",
+      "Battery Life": "12 Hours Continuous Playback",
+      "Build & Material": "IPX7 Waterproof Aluminum Mesh"
+    },
+    "processed_at": "2026-08-31T20:40:28.173282",
+    "published_to_instagram": 0,
+    "instagram_container_id": null,
+    "published_at": null
+  },
+  {
     "asin": "B0BTMSF6T6",
     "title": "Keychron Q1 Pro Wireless Custom Mechanical Keyboard",
     "category": "Productivity Hardware",
