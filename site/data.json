@@ -1,5 +1,31 @@
 [
   {
+    "asin": "B089QPWYY6",
+    "title": "Elgato Stream Deck MK.2 Tactile Control Pad",
+    "category": "Productivity Hardware",
+    "rating": 4.8,
+    "review_count": 8920,
+    "price": "$149.99",
+    "image_url": "https://m.media-amazon.com/images/I/611Z-7Xv7hL._AC_SL1500_.jpg",
+    "affiliate_url": "https://www.amazon.com/dp/B089QPWYY6?tag=techspecdiges-20",
+    "pros": [
+      "Streamlines developer macros, OBS scenes, and smart home triggers",
+      "Deep ecosystem with downloadable icon packs and plugins",
+      "Instant tactile response with custom GIF key covers"
+    ],
+    "cons": "Requires persistent background software running on host PC.",
+    "specs": {
+      "Keys": "15 Customizable LCD Keys with Tactile Feedback",
+      "Interface": "USB-C Detachable Cable",
+      "Software": "Native SDK with Multi-Action Automation",
+      "Stand": "45-Degree Fixed Angle Desktop Mount"
+    },
+    "processed_at": "2026-09-02T18:26:42.364144",
+    "published_to_instagram": 0,
+    "instagram_container_id": null,
+    "published_at": null
+  },
+  {
     "asin": "B09B8W56SS",
     "title": "Anker Soundcore Motion X600 Spatial Audio Speaker",
     "category": "Audio & Desk Setups",
