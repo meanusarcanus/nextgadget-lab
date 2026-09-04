@@ -1,5 +1,31 @@
 [
   {
+    "asin": "B0DYNAMIC6658",
+    "title": "UGREEN Nexode 300W GaN 5-Port Desktop Charger",
+    "category": "EDC Tech",
+    "rating": 4.8,
+    "review_count": 1420,
+    "price": "$269.99",
+    "image_url": "https://m.media-amazon.com/images/I/71g0k+V4XBL._AC_SL1500_.jpg",
+    "affiliate_url": "https://www.amazon.com/dp/B0DYNAMIC6658?tag=techspecdiges-20",
+    "pros": [
+      "Powers up to 3 laptops simultaneously at full speed",
+      "GaNFast chips provide high efficiency in compact footprint",
+      "Real-time safety sensors monitor temperature 800x per second"
+    ],
+    "cons": "Heavy duty desktop cable brick setup required.",
+    "specs": {
+      "Total Power": "300W Max Fast Charging (140W Single Port Output)",
+      "Ports": "4x USB-C + 1x USB-A GaNFast Tech",
+      "Cooling": "Thermal Guard 2.0 Temperature Monitoring",
+      "Compatibility": "Simultaneous 3x Laptop Fast Charge"
+    },
+    "processed_at": "2026-09-04T18:08:25.299278",
+    "published_to_instagram": 0,
+    "instagram_container_id": null,
+    "published_at": null
+  },
+  {
     "asin": "B089QPWYY6",
     "title": "Elgato Stream Deck MK.2 Tactile Control Pad",
     "category": "Productivity Hardware",
